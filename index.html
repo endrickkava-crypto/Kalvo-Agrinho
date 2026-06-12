@@ -13,6 +13,7 @@ padding: 0;
 background-color: #f4f9f4; /* Fundo verde bem claro */
 color: #333;
 line-height: 1.6;
+scroll-behavior: smooth; /* Rolagem suave ao clicar no menu */
 }
 
 /* Cabeçalho */
@@ -41,6 +42,9 @@ nav {
 background-color: #1b5e20;
 text-align: center;
 padding: 1rem 0;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 nav a {
@@ -57,128 +61,3 @@ color: #aed581;
 }
 
 /* Contêiner Principal */
-.container {
-max-width: 1200px;
-margin: 2rem auto;
-padding: 0 20px;
-}
-
-/* Seção de Destaque (Hero) usando Degradê em vez de Imagem */
-.hero {
-background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
-color: white;
-padding: 4rem 2rem;
-text-align: center;
-border-radius: 12px;
-margin-bottom: 3rem;
-box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-}
-
-.hero h2 {
-font-size: 2.2rem;
-margin-top: 0;
-}
-
-.hero p {
-font-size: 1.2rem;
-max-width: 800px;
-margin: 0 auto;
-}
-
-/* Seção de Cards (Pilares) */
-.pilares-titulo {
-text-align: center;
-color: #2e7d32;
-font-size: 2rem;
-margin-bottom: 2rem;
-}
-
-.cards {
-display: flex;
-gap: 25px;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-.card {
-background-color: white;
-padding: 25px;
-border-radius: 10px;
-flex: 1;
-min-width: 280px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-border-top: 5px solid #4caf50;
-transition: transform 0.3s ease;
-}
-
-.card:hover {
-transform: translateY(-5px);
-}
-
-.card h3 {
-color: #1b5e20;
-margin-top: 0;
-font-size: 1.4rem;
-}
-
-/* Rodapé */
-footer {
-background-color: #222;
-color: #ccc;
-text-align: center;
-padding: 1.5rem 0;
-margin-top: 3rem;
-}
-
-footer p {
-margin: 0;
-}
-</style>
-</head>
-<body>
-
-<header>
-<h1>Agro Forte e Sustentável</h1>
-<p>Semeando inovação hoje para nutrir as gerações de amanhã</p>
-</header>
-
-<nav>
-<a href="#">Início</a>
-<a href="#">Nossos Pilares</a>
-<a href="#">Tecnologia</a>
-<a href="#">Contato</a>
-</nav>
-
-<div class="container">
-<section class="hero">
-<h2>A Produtividade do Campo em Perfeita Harmonia com a Natureza</h2>
-<p>O agronegócio do futuro já começou. Mostramos todos os dias que é perfeitamente possível unir recordes de produtividade, tecnologias de última geração e um respeito inegociável pelo meio ambiente. Nosso compromisso vai muito além da colheita: trabalhamos para regenerar o solo, proteger nossos recursos hídricos e garantir que cada safra seja um passo rumo a um planeta mais verde.</p>
-</section>
-
-<h2 class="pilares-titulo">Nossos Pilares</h2>
-
-<section class="cards">
-<div class="card">
-<h3>🌱 Preservação e Cuidado</h3>
-<p>Adotamos práticas de manejo inteligente, como o plantio direto e a rotação estratégica de culturas. Dessa forma, protegemos a vitalidade do solo, conservamos a água e garantimos que a biodiversidade prospere lado a lado com nossas lavouras.</p>
-</div>
-
-<div class="card">
-<h3>🚜 Tecnologia de Ponta</h3>
-<p>Transformamos dados em colheitas abundantes. Com o uso de drones de monitoramento, inteligência artificial e agricultura de precisão, calculamos cada gota de água e cada semente, eliminando desperdícios e maximizando nossos resultados.</p>
-</div>
-
-<div class="card">
-<h3>🤝 Economia Circular</h3>
-<p>Na nossa visão, nada se perde, tudo se transforma. Reaproveitamos resíduos orgânicos por meio de compostagem avançada e biodigestores, gerando fertilizantes naturais de alta qualidade e energia limpa para abastecer nossas próprias operações.</p>
-</div>
-</section>
-
-</div>
-
-<footer>
-<p>&copy; 2026 Agro Forte e Sustentável. Cultivando um legado de responsabilidade.</p>
-</footer>
-
-</body>
-</html>
