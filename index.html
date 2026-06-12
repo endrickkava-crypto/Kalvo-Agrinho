@@ -61,3 +61,277 @@ color: #aed581;
 }
 
 /* Contêiner Principal */
+.container {
+max-width: 1200px;
+margin: 2rem auto;
+padding: 0 20px;
+}
+
+/* Seção de Destaque (Hero) */
+.hero {
+background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
+color: white;
+padding: 4rem 2rem;
+text-align: center;
+border-radius: 12px;
+margin-bottom: 3rem;
+box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+font-size: 2.2rem;
+margin-top: 0;
+}
+
+.hero p {
+font-size: 1.2rem;
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* Seções de Título Comum */
+.secao-titulo {
+text-align: center;
+color: #2e7d32;
+font-size: 2rem;
+margin-top: 4rem;
+margin-bottom: 2rem;
+}
+
+/* Seção de Cards (Pilares) */
+.cards {
+display: flex;
+gap: 25px;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.card {
+background-color: white;
+padding: 25px;
+border-radius: 10px;
+flex: 1;
+min-width: 280px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+border-top: 5px solid #4caf50;
+transition: transform 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card h3 {
+color: #1b5e20;
+margin-top: 0;
+font-size: 1.4rem;
+}
+
+/* Seção de Tecnologia (Layout em Grid) */
+.grid-tecnologia {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 25px;
+}
+
+.tech-box {
+background-color: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+border-left: 5px solid #81c784;
+}
+
+.tech-box h3 {
+color: #2e7d32;
+margin-top: 0;
+}
+
+/* Tabela de Impacto */
+.tabela-container {
+overflow-x: auto; /* Garante responsividade em telas pequenas */
+}
+
+.tabela-impacto {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+margin-bottom: 2rem;
+}
+
+.tabela-impacto th, .tabela-impacto td {
+padding: 18px;
+text-align: left;
+}
+
+.tabela-impacto th {
+background-color: #2e7d32;
+color: white;
+font-size: 1.1rem;
+}
+
+.tabela-impacto tr:nth-child(even) {
+background-color: #f1f8e9;
+}
+
+.tabela-impacto tr:hover {
+background-color: #e8f5e9;
+}
+
+/* Seção de Contato */
+.contato-container {
+background-color: #e8f5e9;
+padding: 40px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contato-container p {
+font-size: 1.1rem;
+max-width: 600px;
+margin: 0 auto 20px auto;
+}
+
+.btn-contato {
+display: inline-block;
+background-color: #2e7d32;
+color: white;
+padding: 12px 35px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 25px;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contato:hover {
+background-color: #1b5e20;
+transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+background-color: #222;
+color: #ccc;
+text-align: center;
+padding: 1.5rem 0;
+margin-top: 4rem;
+}
+
+footer p {
+margin: 0;
+}
+</style>
+</head>
+<body>
+
+<header id="inicio">
+<h1>Agro Forte e Sustentável</h1>
+<p>Semeando inovação hoje para nutrir as gerações de amanhã</p>
+</header>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#pilares">Nossos Pilares</a>
+<a href="#tecnologia">Tecnologia</a>
+<a href="#impacto">Impacto</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+<section class="hero">
+<h2>A Produtividade do Campo em Perfeita Harmonia com a Natureza</h2>
+<p>O agronegócio do futuro já começou. Mostramos todos os dias que é perfeitamente possível unir recordes de produtividade, tecnologias de última geração e um respeito inegociável pelo meio ambiente. Nosso compromisso vai muito além da colheita: trabalhamos para regenerar o solo, proteger nossos recursos hídricos e garantir que cada safra seja um passo rumo a um planeta mais verde.</p>
+</section>
+
+<h2 class="secao-titulo" id="pilares">Nossos Pilares</h2>
+<section class="cards">
+<div class="card">
+<h3>🌱 Preservação e Cuidado</h3>
+<p>Adotamos práticas de manejo inteligente, como o plantio direto e a rotação estratégica de culturas. Dessa forma, protegemos a vitalidade do solo, conservamos a água e garantimos que a biodiversidade prospere lado a lado com nossas lavouras.</p>
+</div>
+
+<div class="card">
+<h3>🚜 Tecnologia de Ponta</h3>
+<p>Transformamos dados em colheitas abundantes. Com o uso de drones de monitoramento, inteligência artificial e agricultura de precisão, calculamos cada gota de água e cada semente, eliminando desperdícios e maximizando nossos resultados.</p>
+</div>
+
+<div class="card">
+<h3>🤝 Economia Circular</h3>
+<p>Na nossa visão, nada se perde, tudo se transforma. Reaproveitamos resíduos orgânicos por meio de compostagem avançada e biodigestores, gerando fertilizantes naturais de alta qualidade e energia limpa para abastecer nossas próprias operações.</p>
+</div>
+</section>
+
+<h2 class="secao-titulo" id="tecnologia">Tecnologia que Transforma</h2>
+<section class="grid-tecnologia">
+<div class="tech-box">
+<h3>🛰️ Telemetria e Satélites</h3>
+<p>Acompanhamos o desenvolvimento das plantas em tempo real através de imagens de satélite de alta resolução, prevendo anomalias climáticas e garantindo intervenções cirúrgicas na lavoura antes que pragas se espalhem.</p>
+</div>
+<div class="tech-box">
+<h3>💧 Irrigação Inteligente</h3>
+<p>Sensores conectados instalados diretamente no solo medem a umidade exata da terra. O sistema de gotejamento automatizado só libera água quando e onde a planta realmente necessita, reduzindo o consumo hídrico em até 40%.</p>
+</div>
+<div class="tech-box">
+<h3>🔬 Biologização do Campo</h3>
+<p>Substituímos gradativamente os defensivos químicos por soluções bio-baseadas. Defensivos biológicos extraídos da própria natureza combatem ameaças sem agredir polinizadores essenciais, como as abelhas.</p>
+</div>
+</section>
+
+<h2 class="secao-titulo" id="impacto">Nosso Impacto em Números</h2>
+<section class="tabela-container">
+<table class="tabela-impacto">
+<thead>
+<tr>
+<th>Indicador de Sustentabilidade</th>
+<th>Prática Tradicional</th>
+<th>Modelo Agro Sustentável</th>
+<th>Resultado / Benefício</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Consumo de Água</strong></td>
+<td>Aspersão convencional contínua</td>
+<td>Gotejamento com sensores IoT</td>
+<td>Economia de até 40% dos recursos hídricos</td>
+</tr>
+<tr>
+<td><strong>Emissões de Carbono</strong></td>
+<td>Arado intensivo e queima</td>
+<td>Plantio direto e créditos de carbono</td>
+<td>Redução de 55% na pegada de CO₂ equivalente</td>
+</tr>
+<tr>
+<td><strong>Saúde do Solo</strong></td>
+<td>Uso contínuo de fertilizantes sintéticos</td>
+<td>Rotação de culturas e biofertilizantes</td>
+<td>Aumento de 30% na matéria orgânica do solo</td>
+</tr>
+<tr>
+<td><strong>Desperdício de Alimentos</strong></td>
+<td>Logística pós-colheita sem monitoramento</td>
+<td>Rastreabilidade digital de ponta a ponta</td>
+<td>Menos de 2% de perdas no transporte</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<h2 class="secao-titulo" id="contato">Fale Conosco</h2>
+<section class="contato-container">
+<p>Quer saber mais sobre como implementar nossas soluções sustentáveis ou se tornar um parceiro do agro do futuro? Nossa equipe de especialistas está pronta para ajudar a transformar a sua produção.</p>
+<a href="mailto:contato@agrofortesustentavel.com" class="btn-contato">Entrar em Contato</a>
+</section>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Agro Forte e Sustentável. Cultivando um legado de responsabilidade.</p>
+</footer>
+
+</body>
+</html>
