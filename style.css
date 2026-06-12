@@ -1,4 +1,6 @@
-/* Estilos Globais */
+/* ==========================================================================
+   Estilos Globais
+   ========================================================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -6,9 +8,13 @@ body {
     background-color: #f4f9f4; /* Fundo verde bem claro */
     color: #333;
     line-height: 1.6;
+    scroll-behavior: smooth; /* Rolagem suave nativa */
+    transition: background-color 0.3s ease;
 }
 
-/* Cabeçalho */
+/* ==========================================================================
+   Cabeçalho e Menu de Navegação
+   ========================================================================== */
 header {
     background-color: #2e7d32; /* Verde escuro forte */
     color: white;
@@ -29,11 +35,14 @@ header p {
     color: #c8e6c9;
 }
 
-/* Menu de Navegação */
 nav {
     background-color: #1b5e20;
     text-align: center;
     padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transição para o efeito do Script.js */
 }
 
 nav a {
@@ -49,19 +58,4 @@ nav a:hover {
     color: #aed581;
 }
 
-/* Contêiner Principal */
-.container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-
-/* Seção de Destaque (Hero) usando Degradê em vez de Imagem */
-.hero {
-    background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    box-shadow: 0
+/* Link ativo inj
